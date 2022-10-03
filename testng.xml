@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TGProjectFramework">
+    <test name="UI Automation">
+        <groups>
+            <run>
+                <include name="regression"/>
+<!--                <exclude name="smoke"/>-->
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.BlazedemoTest"/>
+            <class name="tests.SaucelabsTests"/>
+            <class name="tests.StoreAppTests"/>
+        </classes>
+    </test>
+</suite>
